@@ -1,4 +1,4 @@
-package com.leetcode.onetoten.code004MedianofTwoSortedArrays;
+package com.leetcode.No1To100.code004MedianofTwoSortedArrays;
 
 import org.testng.annotations.Test;
 

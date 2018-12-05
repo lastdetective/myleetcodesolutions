@@ -1,4 +1,4 @@
-package com.leetcode.onetoten.code002AddTwoNumbers;
+package com.leetcode.No1To100.code002AddTwoNumbers;
 
 
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package com.leetcode.onetoten.code003LongestSubstringWithoutRepeatingCharacters;
+package com.leetcode.No1To100.code003LongestSubstringWithoutRepeatingCharacters;
 
 /**
  * Created by Administrator on 2018/12/5.

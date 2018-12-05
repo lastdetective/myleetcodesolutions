@@ -1,8 +1,6 @@
-package com.leetcode.onetoten.code005LongestPalindromicSubstring;
+package com.leetcode.No1To100.code005LongestPalindromicSubstring;
 
 import org.testng.annotations.Test;
-
-import java.util.Map;
 
 /**
  * 找出最长的回文子串
@@ -25,11 +23,13 @@ public class LongestPalindromicSubstring {
         return resultString;
     }
 
+    public String longestPalindromeDynamic(String s) {
+
+        return null;
+    }
+
     /**
      * 判断是否是回文串
-     * 1 2 3 4
-     * 5
-     * 4 3 2 1
      *
      * @param s
      * @return
