@@ -1,4 +1,4 @@
-package com.leetcode.onetoten;
+package com.leetcode.onetoten.code002AddTwoNumbers;
 
 /**
  * Definition for singly-linked list

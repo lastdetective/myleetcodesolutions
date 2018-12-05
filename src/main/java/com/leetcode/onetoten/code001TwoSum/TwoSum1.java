@@ -1,4 +1,4 @@
-package com.leetcode.onetoten;
+package com.leetcode.onetoten.code001TwoSum;
 
 import java.util.HashMap;
 import java.util.Map;
