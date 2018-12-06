@@ -1,6 +1,6 @@
 package com.leetcode.No1To100.code004MedianofTwoSortedArrays;
 
-import org.testng.annotations.Test;
+
 
 /**
  * Created by Administrator on 2018/12/5.
@@ -36,7 +36,6 @@ public class MedianOfTwoSortedArrays {
         return middle;
     }
 
-    @Test
     public void testFindMedianSortedArrays() {
         int[] nums1 = {1, 2};
         int[] nums2 = {3, 4};
