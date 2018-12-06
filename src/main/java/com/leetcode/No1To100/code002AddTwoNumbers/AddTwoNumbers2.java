@@ -1,7 +1,7 @@
 package com.leetcode.No1To100.code002AddTwoNumbers;
 
 
-import org.testng.annotations.Test;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,7 +102,6 @@ public class AddTwoNumbers2 {
     }
 
 
-    @Test
     public void testAddTwoNumbers() {
         /**
          * [9,9,9,9,9,9,9,9,9,9]
