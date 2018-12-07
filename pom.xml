@@ -30,7 +30,14 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <junit.jupiter.version>5.3.0</junit.jupiter.version>
+        <!-- 如果使用 idea 2018 可以写成 5.3.0
+         idea 2016 使用5.0.0-M4
+
+         更多细节 可以查看这里
+         https://junit.org/junit5/docs/current/user-guide/#running-tests-ide-intellij-idea
+
+         -->
+        <junit.jupiter.version>5.0.0-M4</junit.jupiter.version>
     </properties>
     <build>
         <plugins>
