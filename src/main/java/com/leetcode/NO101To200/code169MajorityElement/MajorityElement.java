@@ -2,6 +2,7 @@ package com.leetcode.NO101To200.code169MajorityElement;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 /*
  * @lc app=leetcode id=169 lang=java
@@ -78,28 +79,62 @@ class MajorityElement {
          *
          * The brute force algorithm iterates over the array, and then iterates again for each number to count its occurrences. As soon as a number is found to have appeared more than any other can possibly have appeared, return it.
          * </pre>
+         *
+         int majorityCount = nums.length / 2;
+
+         for (int num : nums) {
+         int count = 0;
+         for (int elem : nums) {
+         if (elem == num) {
+         count += 1;
+         }
+         }
+
+         if (count >= majorityCount) {
+         return num;
+         }
+
+         }
+
+         return -1;*/
+        /**
+         * Approach 4: Randomization
+         * Intuition
+         *
+         * Because more than \lfloor \dfrac{n}{2} \rfloor⌊
+         * 2
+         * n
+         * ​
+         *  ⌋ array indices are occupied by the majority element, a random array index is likely to contain the majority element.
+         *
+         * Algorithm
+         *
+         * Because a given index is likely to have the majority element, we can just select a random index, check whether its value is the majority element, return if it is, and repeat if it is not. The algorithm is verifiably correct because we ensure that the randomly chosen value is the majority element before ever returning.
          */
-        /*
-        这个解法有问题
-        比如输入 [6,6,6,7,7,7,7] 应该输出7
-        但是这里输出 6
-         */
+
+
+        Random random = new Random();
         int majorityCount = nums.length / 2;
-
-        for (int num : nums) {
-            int count = 0;
-            for (int elem : nums) {
-                if (elem == num) {
-                    count += 1;
-                }
+        while (true) {
+            int candidate = nums[randRange(random, 0, nums.length)];
+            if (countOccurences(nums, candidate) > majorityCount) {
+                return candidate;
             }
-
-            if (count >= majorityCount) {
-                return num;
-            }
-
         }
+    }
 
-        return -1;
+    private int randRange(Random random, int min, int max) {
+
+        return random.nextInt(max - min) + min;
+    }
+
+    private int countOccurences(int[] nums, int num) {
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == num) {
+                count++;
+            }
+        }
+        return count;
     }
 }
