@@ -43,7 +43,18 @@ package com.leetcode.NO201To300.code240SearchA2dMatrixII;
  */
 public class SearchMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
-        return true;
+        int row = 0;
+        int column = matrix[0].length - 1;
+        while (row <= matrix.length - 1 && column >= 0) {
+            if (target == matrix[row][column]) {
+                return true;
+            } else if (target > matrix[row][column]) {
+                row++;
+            } else if (target < matrix[row][column]) {
+                column--;
+            }
+        }
+        return false;
 
     }
 }

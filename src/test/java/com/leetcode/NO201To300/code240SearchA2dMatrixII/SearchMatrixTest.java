@@ -15,5 +15,9 @@ class SearchMatrixTest {
                 {10, 13, 14, 17, 24},
                 {18, 21, 23, 26, 30}
         };
+        SearchMatrix searchMatrix = new SearchMatrix();
+        boolean result = searchMatrix.searchMatrix(matrix, 88);
+        assertEquals(result,false);
+
     }
 }

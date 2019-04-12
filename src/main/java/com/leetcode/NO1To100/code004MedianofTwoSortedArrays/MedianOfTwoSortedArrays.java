@@ -1,4 +1,4 @@
-package com.leetcode.No1To100.code004MedianofTwoSortedArrays;
+package com.leetcode.NO1To100.code004MedianofTwoSortedArrays;
 
 
 

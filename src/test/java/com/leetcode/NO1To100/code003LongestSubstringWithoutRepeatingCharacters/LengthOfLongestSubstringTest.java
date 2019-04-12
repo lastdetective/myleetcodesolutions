@@ -1,8 +1,6 @@
-package com.leetcode.No1To100.code003LongestSubstringWithoutRepeatingCharacters;
+package com.leetcode.NO1To100.code003LongestSubstringWithoutRepeatingCharacters;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Test;
 
 /**
  * LengthOfLongestSubstring Tester.

@@ -1,4 +1,4 @@
-package com.leetcode.No1To100.code006ZigZagConversion;
+package com.leetcode.NO1To100.code006ZigZagConversion;
 
 import java.util.ArrayList;
 import java.util.List;
