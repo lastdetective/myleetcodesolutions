@@ -14,19 +14,21 @@ public class PalindromePartitioning {
         return resultLst;
     }
 
-    public void backTrack(String s, int l) {
+    public void backTrack(String s, int head) {
         if (currLst.size() > 0 //the initial str could be palindrome
-                && l >= s.length()) {
+                && head >= s.length()) {
             List<String> r = (ArrayList<String>) currLst.clone();
             resultLst.add(r);
         }
-        for (int i = l; i < s.length(); i++) {
-            if (isPalindrome(s, l, i)) {
-                if (l == i)
-                    currLst.add(Character.toString(s.charAt(i)));
-                else
-                    currLst.add(s.substring(l, i + 1));
-                backTrack(s, i + 1);
+        for (int tail = head; tail < s.length(); tail++) {
+            if (isPalindrome(s, head, tail)) {
+                if (head == tail) {
+                    currLst.add(Character.toString(s.charAt(tail)));
+                } else {
+                    currLst.add(s.substring(head, tail + 1));
+                }
+
+                backTrack(s, tail + 1);
                 currLst.remove(currLst.size() - 1);
             }
         }
