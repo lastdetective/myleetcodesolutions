@@ -1,4 +1,4 @@
-package com.leetcode.NO101To200.code136SingleNumber.code88MergeSortedArray;
+package com.leetcode.NO1To100.code88MergeSortedArray;
 
 /*
  * @lc app=leetcode id=88 lang=java

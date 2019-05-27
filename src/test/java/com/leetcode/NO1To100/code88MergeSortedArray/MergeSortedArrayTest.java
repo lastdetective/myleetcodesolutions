@@ -1,8 +1,6 @@
-package com.leetcode.NO101To200.code136SingleNumber.code88MergeSortedArray;
+package com.leetcode.NO1To100.code88MergeSortedArray;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MergeSortedArrayTest {
 
