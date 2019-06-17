@@ -43,7 +43,7 @@ public class MyEightQueens {
 
     public static void main(String[] args) {
         findToPlaceQueen(0);
-        System.out.println(totalSolutionCount);
+        System.out.println("总共有 " + totalSolutionCount + " 种解法");
     }
 
     private static boolean checkQueenLocation(int row, int column) {

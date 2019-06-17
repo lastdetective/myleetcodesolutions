@@ -2,7 +2,8 @@ package com.eightqueens;
 
 /**
  * 八皇后问题解决
- * 原文   <a href="https://www.jianshu.com/p/65c8c60b83b8">https://www.jianshu.com/p/65c8c60b83b8</a>
+ * 原文
+ * @see <a href="https://www.jianshu.com/p/65c8c60b83b8">https://www.jianshu.com/p/65c8c60b83b8</a>
  */
 public class EightQueens {
     private static int[][] arry = new int[8][8];//棋盘，放皇后
